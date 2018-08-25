@@ -593,7 +593,7 @@ section {
 .hero {
   position: relative;
   background-color: #81868e;
-  background-image: url(../../img/hero_background.jpg);
+  background-image: url(../img/hero_background.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
