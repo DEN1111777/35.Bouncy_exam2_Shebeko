@@ -1,0 +1,31 @@
+.testimonials {
+	background-color: rgb(243, 243, 243);
+}
+
+.testimonials__slider-wrapper {
+	background-color: $color-white;
+	padding-top: 54px;
+	padding-bottom: 60px;
+	padding-left: 90px;
+	padding-right: 118px;
+	margin-bottom: 100px;
+}
+
+.testimonials__slide-wrapper {
+	padding-bottom: 60px;
+}
+
+.testimonials__avatar {
+	float: left;
+	width: 130px;
+	margin-right: 70px;
+}
+
+.testimonials__name {
+	font-weight: 600;
+}
+
+.testimonials__prof {
+	margin-left: 0;
+	font-size: 14px;
+}

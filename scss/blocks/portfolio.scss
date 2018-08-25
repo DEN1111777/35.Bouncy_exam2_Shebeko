@@ -1,0 +1,41 @@
+.portfolio {
+	background-color: rgb(243, 243, 243);
+}
+
+.portfolio__grid {
+	margin-bottom: 100px;
+}
+
+.portfolio__nav-list {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	padding-left: 0;
+}
+
+.portfolio__nav-item {
+	position: relative;
+	padding-right: 30px;
+	cursor: pointer;
+
+	&:last-child {
+		padding-right: 0;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		margin: 0 10%;
+		height: 2px;
+		background-color: $color-green;
+		visibility: hidden;
+	}
+
+	&:hover::after {
+		visibility: visible;
+	}
+}
+
+.portfolio__nav-item--active::after {
+	visibility: visible;
+}

@@ -1,0 +1,19 @@
+.contact-us {
+	background-image: url(../../img/contact_us-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0.1px;
+}
+
+.contact-us__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 55px auto;
+}
+
+.contact-us__text {
+	color: $color-white;
+	margin-bottom: 30px;
+}

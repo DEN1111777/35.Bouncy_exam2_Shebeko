@@ -1,0 +1,21 @@
+.footer {
+	background-color: #232323;
+}
+
+.footer__container {
+	padding-top: 115px;
+	padding-bottom: 54px;
+	text-align: center;
+}
+
+.footer__title {
+	font-size: 24px;
+	color: $color--title;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+}
+
+.footer__slogan {
+	margin-bottom: 20px;
+}

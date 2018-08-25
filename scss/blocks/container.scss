@@ -1,0 +1,43 @@
+.container {
+	// box-sizing: border-box;
+	margin: auto;
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container__intro {
+	max-width: 467px;
+	margin: auto;
+	padding-top: 75px;
+	padding-bottom: 50px;
+}
+
+.container__title {
+	margin-bottom: 25px;
+	font-family: $font-family--title;
+	font-size: $font-size--title;
+	font-weight: $font-weight--title;
+	letter-spacing: $letter-spacing-title;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container__title--left {
+	text-align: left;
+}
+
+.container__sub-title {
+	font-size: 14px;
+	text-align: center;
+}
+
+.container__title--hero {
+	font-size: 35px;
+	color: $color-white;
+}
+
+.container__sub-title--hero {
+	font-size: 16px;
+	color: $color-white;
+}
