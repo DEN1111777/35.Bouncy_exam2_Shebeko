@@ -838,7 +838,7 @@ section {
     font-size: 12px; } }
 
 .contact-us {
-  background-image: url(../../img/contact_us-bg.jpg);
+  background-image: url(../img/contact_us-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0.1px; }
