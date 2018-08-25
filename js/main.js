@@ -5,28 +5,23 @@
 
 		$('html').removeClass('no-js');
 
-		// grids with masonry plugin
-		$('.grid').masonry({
-			columnWidth : '.grid__sizer',
-			// gutter : '.gutter-sizer',
-			itemSelector : '.grid__item',
-			percentPosition : 'true',
-			fitWidth: true,
-			horizontalOrder: true
+		// grids with isotope plugin
+		var grid = $('.grid').isotope({
+			itemSelector: '.grid__item',
+			layoutMode: 'masonry',
+			masonry: {
+				horizontalOrder: true
+			}
 		});
 
-
-		// portfolio-filter
+		// portfolio-filter-isotop
 		$('.portfolio__nav-item').click(function() {
-			var filterValue = $(this).attr('data-category');
-			$('.grid__item').hide();
-			$(filterValue).show();
+			var filterValue = $( this ).attr('data-category');
+        	grid.isotope({ filter: filterValue });
 
 			$(this)
 				.addClass("portfolio__nav-item--active")
 				.siblings().removeClass("portfolio__nav-item--active");
-
-			$('.grid').masonry('layout');
 		});
 
 		// slider by slick-slider for team section
@@ -71,8 +66,6 @@
 			var infowindow = new google.maps.InfoWindow({
 				content: 'Yabadabadu'
 			});
-
-			infowindow.open(map, marker);
 
 			marker.addListener('click', function() {
 				infowindow.open(map, marker);
